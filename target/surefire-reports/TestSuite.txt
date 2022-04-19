@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 34.826 sec <<< FAILURE!
+feature(mindq.runners.Runner)  Time elapsed: 31.055 sec  <<< FAILURE!
+cucumber.runtime.CucumberException: java.lang.AssertionError: The following asserts failed:
+	expected [Invalid email or password] but found [Invalid email or password.]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+	at mindq.stepdefinitions.LoginStepdefinitions.user_should_see_the_error_message(LoginStepdefinitions.java:66)
+	at ?.Then User should see the error message(Login.feature:13)
+
