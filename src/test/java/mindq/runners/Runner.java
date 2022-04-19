@@ -12,7 +12,9 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 @CucumberOptions( features={"Features"},
                   glue={"mindq.stepdefinitions"},
                 		 //plugin = { "pretty","html:target/cucumber-reports" },
-                		  plugin = {"pretty","html:target/cucumber-reports","com.cucumber.listener.ExtentCucumberFormatter:target/html/ExtentReport.html"}
+                		  plugin = {"pretty","html:target/cucumber-reports",
+                				  "json:target/cucumber-reports/CucumberTestReport.json",
+                				  "com.cucumber.listener.ExtentCucumberFormatter:target/html/ExtentReport.html"}
                   ,tags = {"@logininvalid"},
                   monochrome = true
 		
